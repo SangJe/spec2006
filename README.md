@@ -22,3 +22,13 @@
 --#if !defined __alloca && !defined __GNU_LIBRARY__ <br>
 ++#if !defined __alloca && defined __GNU_LIBRARY__ <br>
 
+
+## 코드 변경 리스트
+
+1. 447.dealII/src/include/lac/vector.h #inlcude<cstring> 추가하기 (이유: strlen is not a member of 'std' 오류 발생)
+2. 450.soplex/src/mpsinput.cc (이유: getline()에 대해 == 연산자가 존재하지 않음) 아래처럼 변경 함. <br>
+  m_input.getline(m_buf, sizeof(m_buf)); <br>
+         if (m_input.eof()) <br>
+3. 483.xalancbmk/run/build_base_amd64-m64-gcc42-nn.0000/FormatterToHTML.cpp (이유: memset was not declared in this scope)
+  #include <cstring> 하기
+ 
