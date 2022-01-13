@@ -11,8 +11,8 @@
 └── spec_cpu2006.iso : 만들어야 할 것
 ``` 
 
-- 참교자료1: (https://sjp38.github.io/post/spec_cpu2006_install/)
-- 참고자료2: (https://ryotta-205.tistory.com/48)
+- Reference1: (https://sjp38.github.io/post/spec_cpu2006_install/)
+- Reference2: (https://ryotta-205.tistory.com/48)
 
 ## How to Run?
 1. extract_spec.sh --> build.sh 순으로 실행 시켜 첫번째 빌드 하기
